@@ -41,10 +41,10 @@ export default function SearchInput(props) {
                     value={value}
                     onChange={event => setValue(event.target.value)}
                     onKeyUp={handleEnter}
-                    placeholder="Найти"
+                    placeholder="Search"
                 />
 
-                    <button  className="btn search brown darken-4" onClick={() => props.searchHandler(value)}><i className ="material-icons">search</i></button>
+                <button  className="btn search brown darken-4" onClick={() => props.searchHandler(value)}><i className ="material-icons">search</i></button>
             </div>
         </div>
     );

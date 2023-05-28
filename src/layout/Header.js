@@ -19,15 +19,15 @@ export default function Header(props) {
                     <Link to="/" className="brand-logo">FoodLovers</Link>
                     <Link  data-target="slide-out" className ="sidenav-trigger"><i className = "material-icons">menu</i></Link>
                     <ul  className="right hide-on-med-and-down">
-                        <li><Link to="/">Категории</Link></li>
-                        <li><Link to="/ingredient">Ингредиенты</Link></li>
+                        <li><Link to="/">Categories</Link></li>
+                        <li><Link to="/ingredient">Ingredient</Link></li>
                     </ul>
                 </div>
             </nav>
             </div>
             <ul id="slide-out" class="sidenav sidenav-close">
-                        <li><Link  className = "waves-effect" to="/">Категории</Link></li>
-                        <li><Link className = "waves-effect" to="/ingredient">Ингредиенты</Link></li>
+                        <li><Link  className = "waves-effect" to="/">Categories</Link></li>
+                        <li><Link className = "waves-effect" to="/ingredient">Ingredient</Link></li>
                 </ul>
         </header>
         

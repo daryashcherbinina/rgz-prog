@@ -3,9 +3,9 @@ import {useParams} from 'react-router-dom';
 import {CatalogContext} from './Context';
 import {getCategoryRecipes} from '../api';
 import React from 'react';
-
 import Preloader from '../components/Preloader';
 import RecipeList from './RecipeList';
+
 
 export default function CategoryItem(props) {
     const params = useParams();
@@ -26,6 +26,7 @@ export default function CategoryItem(props) {
             getCategoryRecipes(params.name).then(data => {
                 if (data.meals) {
                     setRecipes(data.meals);
+                    // сохраняем рецепты категории в контекст
                     setRecipesContext(params.name, data.meals);
                 }
                 setLoading(false);
@@ -49,7 +50,7 @@ export default function CategoryItem(props) {
                     <RecipeList items={recipes} />
                 </>
             ) : (
-                <p>Не удалось загрузить список</p>
+                <p>Failed to load</p>
             )}
         </>
     );

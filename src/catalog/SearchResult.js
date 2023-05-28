@@ -47,7 +47,7 @@ export default function SearchResult(props) {
                 </>
             ) : (
                 <>
-                <p>Ничего не найдено</p>
+                <p>Not found</p>
                 </>
             )}
         </>

@@ -117,7 +117,7 @@ return (
   </div>
   </>
     ) : (
-      <p>Не удалось загрузить рецепт</p>
+      <p>Failed to load recipe</p>
       )}
       </>
 );
