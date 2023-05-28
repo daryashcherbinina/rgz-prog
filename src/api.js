@@ -15,12 +15,13 @@ const getOneRecipe = async (id) => {
     const response = await fetch(API_URL + 'lookup.php?i=' + id);
     return await response.json();
 };
+//фильтр по ингредиентам
 const filterByMainIngredient = async (search) => {
   search = encodeURIComponent(search);
   const response = await fetch(API_URL + 'filter.php?i=' + search);
   return await response.json();
 };
-
+//найти рецепты
 const getFoundRecipes = async (search) => {
     search = encodeURIComponent(search);
     const response = await fetch(API_URL + 'search.php?s=' + search);

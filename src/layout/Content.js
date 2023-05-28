@@ -11,13 +11,8 @@ import SearchIngredient from '../pages/SearchIngredient';
 
 
 export default function Content() {
-    
-    //const {categories, loading} = useContext(CatalogContext);
-    
-    // если пользователь ввел поисковый запрос и нажал Enter,
-    // то переходим на страницу server.com/search?str=Beaf и
-    // добавляем ее в историю посещенных страниц браузера
-    
+
+    //роутинг, позволяющий осуществлять навигацию по сайту
 
     return (
         <main className="container">

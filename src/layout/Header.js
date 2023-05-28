@@ -21,18 +21,13 @@ export default function Header(props) {
                     <ul  className="right hide-on-med-and-down">
                         <li><Link to="/">Категории</Link></li>
                         <li><Link to="/ingredient">Ингредиенты</Link></li>
-                       
                     </ul>
-                
                 </div>
             </nav>
-            
-
             </div>
             <ul id="slide-out" class="sidenav sidenav-close">
                         <li><Link  className = "waves-effect" to="/">Категории</Link></li>
                         <li><Link className = "waves-effect" to="/ingredient">Ингредиенты</Link></li>
-   
                 </ul>
         </header>
         

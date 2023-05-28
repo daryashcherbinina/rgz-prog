@@ -4,10 +4,15 @@ import React from 'react';
 const CatalogContext = createContext();
 
 const CatalogContextProvider = (props) => {
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState([]); // здесь храним все категории, которые получили
     const [loading, setLoading] = useState(true);
+    // рецепты каждой категории, которую пользователь уже просмотрел
+
+    // как только рецепты категории получены сохраняем их
     const recipes = {};
 
+    // до того, как категории получены, будем показывать
+    // компонент Preloader, после получения изменяем loading на false
     useEffect(() => {
         getAllCategories().then(data => {
             data.categories && setCategories(data.categories);
